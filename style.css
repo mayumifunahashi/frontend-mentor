@@ -1,0 +1,72 @@
+:root {
+    /*Cores Primárias*/
+    --vermelho-suave: hsl(7, 99%, 70%);
+    --amarelo: hsl(51, 100%, 49%);
+    --preto-ciano: hsl(167, 40%, 24%);
+    --preto-azulado: hsl(198, 62%, 26%);
+    --preto-ciano-moderado:hsl(168, 34%, 41%);
+
+    /*Cores neutras*/
+    --preto-escuro-azulado:hsl(212, 27%, 19%);
+    --preto-escuro-acizentado:hsl(213, 9%, 39%);
+    --preto-acizentado-azulado:hsl(232, 10%, 55%);
+    --cinza-azulado:hsl(210, 4%, 67%);
+    --branco:hsl(0, 0%, 100%);
+
+
+}
+
+#container-grid {
+    display: grid;
+    grid-template-areas: 
+    "cabecalho"
+    "conteudo-principal"
+    "conteudo-texto"
+    "conteudo-imagem"
+    "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 20vh 40vh 20vh 20vh;
+
+}
+
+#cabecalho {
+    grid-area: cabecalho;
+    background-image: url(images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#conteudo-principal {
+grid-area: conteudo-principal;
+}
+
+#conteudo-texto {
+    grid-area: conteudo-texto;
+
+}
+
+#conteudo-imagem {
+    grid-area: conteudo-texto;
+
+}
+
+#rodape {
+    grid-area: rodape;
+
+}
+
+#cabecalho-navegacao {
+   
+
+}
+
+#cabecalho-navegacao-lista {
+display: flex;
+}
+
+.lista-navegacao {
+    display: flex;
+    flex-direction: row;
+}
