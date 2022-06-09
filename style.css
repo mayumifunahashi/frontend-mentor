@@ -24,9 +24,15 @@
     "conteudo-texto"
     "conteudo-imagem"
     "rodape";
-    grid-template-columns: auto;
-    grid-template-rows: 20vh 40vh 20vh 20vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 40vh 50vh 20vh 20vh;
 
+
+}
+
+/*cabeçalho*/
+body {
+    width: 100vw;
 }
 
 #cabecalho {
@@ -35,12 +41,35 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    grid-row: 1/1;
+    grid-column: 1/5;
+    
+    
+    
 
 }
 
-#conteudo-principal {
-grid-area: conteudo-principal;
+#cabecalho-navegacao{
+    width: 100vw;
+    padding: 1rem;
+    
+       
 }
+
+#cabecalho-navegacao-lista{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
 
 #conteudo-texto {
     grid-area: conteudo-texto;
@@ -66,7 +95,11 @@ grid-area: conteudo-principal;
 display: flex;
 }
 
-.lista-navegacao {
-    display: flex;
-    flex-direction: row;
+
+/*Conteúdo princiapl*/
+
+#conteudo-principal {
+grid-area: conteudo-principal;
 }
+
+
