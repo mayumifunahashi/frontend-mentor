@@ -67,19 +67,6 @@ body {
 }
 
 
-#cabecalho-navegacao-lista :nth-child(4) a{
-background-color: var(branco);
-
-}
-
-
-
-
-
-
-
-
-
 #conteudo-texto {
     grid-area: conteudo-texto;
 
